@@ -1,0 +1,35 @@
+@font-face {
+    font-family: persian;
+    src: url(../../fonts/IRANYekanWebFn.eot);
+    src: url(../../fonts/IRANYekanWebFn.ttf);
+    src: url(../../fonts/IRANYekanWebFn.woff);
+    src: url(../../fonts/IRANYekanWebFn.woff2);
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: persian;
+  }
+  h1{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  a{
+    text-decoration: none;
+    color: whitesmoke
+  }
+  img{
+    border-radius: 5px
+  }
+  
+  @import url(./public/css/comment.css);
+  @import url(./public/css/devices.css);
+  @import url(./public/css/home.css);
+  @import url(./public/css/how.css);
+  @import url(./public/css/kids.css);
+  @import url(./public/css/menu.css);
+  @import url(./public/css/online.css);
+  @import url(./public/css/popular.css);
+  @import url(./public/css/test.css);
+  

@@ -1,0 +1,153 @@
+@media only screen and (max-width: 600px){
+  header {
+    .description {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(100px);
+      text-align: center;
+      /* gap: 25px; */
+  
+      h1 {
+        color: #22bc67;
+      }
+  
+      span {
+        color: whitesmoke;
+        direction: rtl;
+        strong {
+          font-weight: bolder;
+        }
+        margin-bottom: 10px;
+      }
+
+      .box {
+          direction: rtl;
+          padding: 10px;
+          box-sizing: border-box;
+        width: 95%;
+        /* height: 100px; */
+        background-color: #292a2a;
+        margin: 20px auto;
+        border-radius: 5px;
+        border: 2px solid rgba(245, 245, 245, 0.521);
+        display: grid;
+        grid-template-columns:40% 30%;
+        grid-template-rows: repeat(2,auto);
+        justify-content: space-between;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        gap: 5px;
+        text-align: right;
+        color: whitesmoke;
+        button{
+          /* width: 50%; */
+          padding: 5px;
+          font-size: 12px;
+          margin-top: auto;
+          transform: translateY(25px);
+          transition: 300ms;
+          background-color: #1cb561;
+          color: whitesmoke;
+          /* height: 41px; */
+          border-radius: 5px;
+          outline: unset;
+          border: unset;
+          font-weight: bold;
+        }
+        h4{
+          position: relative;
+          &::after{
+            content: '30% تخفیف';
+            width: 80px;
+            height: 25px;
+            line-height: 25px;
+            display: inline-block;
+            font-size: 12px;
+            position: absolute;
+            background-color: #E4F6EC;
+            color: #046b32;
+            border-radius: 24px;
+            margin-right: 10px;
+            text-align: center;
+            font-weight: bolder;
+          }
+        }
+  
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px){
+  header {
+    .description {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(100px);
+      text-align: center;
+      gap: 25px;
+  
+      h1 {
+        color: #22bc67;
+      }
+  
+      span {
+        color: whitesmoke;
+        direction: rtl;
+        strong {
+          font-weight: bolder;
+        }
+  
+      }
+      .box {
+          direction: rtl;
+          padding: 10px;
+          box-sizing: border-box;
+        width: 35%;
+        /* height: 100px; */
+        background-color: #292a2a;
+        margin: auto;
+        border-radius: 5px;
+        border: 2px solid rgba(245, 245, 245, 0.521);
+        display: grid;
+        grid-template-columns:40% 30%;
+        grid-template-rows: repeat(2,auto);
+        justify-content: space-between;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        gap: 5px;
+        text-align: right;
+        color: whitesmoke;
+        button{
+          margin-top: auto;
+          transform: translateY(25px);
+          transition: 300ms;
+          background-color: #1cb561;
+          color: whitesmoke;
+          height: 41px;
+          border-radius: 5px;
+          outline: unset;
+          border: unset;
+          font-weight: bold;
+        }
+        h4{
+          &::after{
+            content: '30% تخفیف';
+            width: 80px;
+            height: 25px;
+            line-height: 25px;
+            display: inline-block;
+            font-size: 12px;
+            background-color: #E4F6EC;
+            color: #046b32;
+            border-radius: 24px;
+            margin-right: 10px;
+            text-align: center;
+            font-weight: bolder;
+          }
+        }
+  
+      }
+    }
+  }
+}

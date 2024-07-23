@@ -1,0 +1,452 @@
+@media only screen and (max-width: 600px) {
+  article {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: black;
+
+
+    .movie {
+      box-sizing: border-box;
+
+      /* height: 850px; */
+      padding: 50px 20px;
+      width: 100%;
+      color: whitesmoke;
+      .heading{
+        float: right;
+        width: 100%;
+        text-align: center;
+        h1{
+          /* margin-right: 50%; */
+        }
+      }
+      .toggle {
+        margin-left: 37%;
+        display: flex;
+        direction: rtl;
+        width: max-content;
+        border-radius: 24px;
+        padding: 3px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        /* float: right; */
+        gap: 20px;
+        /* background-color: red; */
+        border: 2px solid white;
+        justify-content: space-between;
+        span{
+          cursor: pointer;
+          &:active
+          {
+            background-color: gray;
+            border-radius: 24px;
+          }
+        }
+      }
+      .film {
+        width: 100%;
+        height: 100%;
+
+        .options {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .posters {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            height: 54%;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
+            .poster {
+              width: 40%;
+              height: 90%;
+              border-radius: 5px;
+              overflow: hidden;
+              .image {
+                img {
+                  width: 100%;
+                  object-fit: cover;
+                  border-radius: 5px;
+                  height: 100%;
+                  transform: scale(1, 1);
+                  transition: 300ms;
+                  &:hover {
+                    transform: scale(1.2, 1.2);
+                  }
+                }
+              }
+            }
+          }
+
+          .details {
+            display: none;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+            /* display: flex; */
+            line-height: 50px;
+            overflow: hidden;
+            flex-wrap: nowrap;
+            .detail {
+              overflow: hidden;
+              direction: rtl;
+              width: 100%;
+              height: 100%;
+              background-image: radial-gradient(
+                  circle,
+                  rgba(0, 0, 0, 0.614) 70%,
+                  rgb(42, 39, 39) 93%
+                ),
+                url("../../image/mov_cvr_filimo_hor_148542_519.png");
+              background-position: top center;
+              background-size: cover;
+              h2 {
+                margin-right: 15px;
+              }
+              span {
+                margin-right: 15px;
+              }
+              div {
+                margin-right: 15px;
+                span {
+                  display: inline-block;
+                  width: 65px;
+                  height: 30px;
+                  font-size: 12px;
+                  background-color: gray;
+                  margin-left: 10px;
+                  text-align: center;
+                  border-radius: 24px;
+                  line-height: 30px;
+                }
+              }
+              p {
+                margin-right: 15px;
+
+                width: 50%;
+                text-wrap: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+
+              .epi {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                margin-top: 15px;
+                align-items: center;
+                .image {
+                  width: 20%;
+                  height: 100%;
+                  position: relative;
+                  img {
+                    filter: blur(5px);
+                    border-radius: 5px;
+                    width: 100%;
+                  }
+                  &::after {
+                    content: url("../../image/icon-lock_fill.png");
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 30%;
+                    right: 45%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .serial {
+        display: none;
+        .toggle {
+          display: flex;
+
+          border: 2px solid white;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  article {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: black;
+
+    .movie {
+      box-sizing: border-box;
+      overflow: hidden;
+      height: 850px;
+      padding: 50px 20px;
+      width: 100%;
+      color: whitesmoke;
+      .heading{
+        float: right;
+        width: 100%;
+        text-align: center;
+        h1{
+          /* margin-right: 50%; */
+        }
+      }
+      .toggle {
+        display: flex;
+        direction: rtl;
+        width: max-content;
+        border-radius: 24px;
+        padding: 3px;
+        float: right;
+        gap: 20px;
+        /* background-color: red; */
+        border: 2px solid white;
+        justify-content: space-between;
+        span{
+          cursor: pointer;
+          &:active
+          {
+            background-color: gray;
+            border-radius: 24px;
+          }
+        }
+      }
+      .film {
+        width: 100%;
+        height: 100%;
+        /* display: none; */
+        .options {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .posters {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 54%;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
+            .poster {
+              width: 12.6%;
+              height: 90%;
+              border-radius: 5px;
+              .image {
+                img {
+                  width: 100%;
+                  object-fit: cover;
+                  border-radius: 5px;
+                  height: 100%;
+                }
+              }
+            }
+          }
+
+          .details {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://static.cdn.asset.filimo.com/flmt/mov_cvr_filimo_hor_148653_507.jpg?width=1920&quality=80&secret=kK5bqDLM8qiLI1_c1Y9PUg);
+            /* display: flex; */
+            line-height: 50px;
+            overflow: hidden;
+            flex-wrap: nowrap;
+            .detail {
+              overflow: hidden;
+              direction: rtl;
+              width: 100%;
+              height: 100%;
+              background-image: radial-gradient(
+                  circle,
+                  rgba(0, 0, 0, 0.614) 70%,
+                  rgb(42, 39, 39) 93%
+                ),
+                url("../../image/mov_cvr_filimo_hor_148542_519.png");
+              background-position: top center;
+              background-size: cover;
+              h2 {
+                margin-right: 15px;
+              }
+              span {
+                margin-right: 15px;
+              }
+              div {
+                margin-right: 15px;
+                span {
+                  display: inline-block;
+                  width: 65px;
+                  height: 30px;
+                  font-size: 12px;
+                  background-color: gray;
+                  margin-left: 10px;
+                  text-align: center;
+                  border-radius: 24px;
+                  line-height: 30px;
+                }
+              }
+              p {
+                margin-right: 15px;
+
+                width: 50%;
+                text-wrap: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+
+              .epi {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                margin-top: 15px;
+                align-items: center;
+                .image {
+                  width: 20%;
+                  height: 100%;
+                  position: relative;
+                  img {
+                    filter: blur(5px);
+                    border-radius: 5px;
+                    width: 100%;
+                  }
+                  &::after {
+                    content: url("../../image/icon-lock_fill.png");
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 30%;
+                    right: 45%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .serial {
+        /* display: none; */
+        transform: translateY(10%);
+        width: 100%;
+        height: 100%;
+
+        .options {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .posters {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 54%;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
+            .poster {
+              width: 12.6%;
+              height: 90%;
+              border-radius: 5px;
+              .image {
+                img {
+                  width: 100%;
+                  object-fit: cover;
+                  border-radius: 5px;
+                  height: 100%;
+                }
+              }
+            }
+          }
+
+          .details {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+            /* display: flex; */
+            line-height: 50px;
+            overflow: hidden;
+            flex-wrap: nowrap;
+            .detail {
+              overflow: hidden;
+              direction: rtl;
+              width: 100%;
+              height: 100%;
+              background-image: radial-gradient(
+                  circle,
+                  rgba(0, 0, 0, 0.614) 70%,
+                  rgb(42, 39, 39) 93%
+                ),
+                url("../../image/mov_cvr_filimo_hor_148542_519.png");
+              background-position: top center;
+              background-size: cover;
+              h2 {
+                margin-right: 15px;
+              }
+              span {
+                margin-right: 15px;
+              }
+              div {
+                margin-right: 15px;
+                span {
+                  display: inline-block;
+                  width: 65px;
+                  height: 30px;
+                  font-size: 12px;
+                  background-color: gray;
+                  margin-left: 10px;
+                  text-align: center;
+                  border-radius: 24px;
+                  line-height: 30px;
+                }
+              }
+              p {
+                margin-right: 15px;
+
+                width: 50%;
+                text-wrap: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+
+              .epi {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                margin-top: 15px;
+                align-items: center;
+                .image {
+                  width: 20%;
+                  height: 100%;
+                  position: relative;
+                  img {
+                    filter: blur(5px);
+                    border-radius: 5px;
+                    width: 100%;
+                  }
+                  &::after {
+                    content: url("../../image/icon-lock_fill.png");
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 30%;
+                    right: 45%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

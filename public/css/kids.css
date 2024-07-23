@@ -1,0 +1,118 @@
+@media only screen and (max-width: 600px) {
+  .animation {
+    width: 100%;
+    height: 60vh;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: right;
+    gap: 80px;
+    padding-bottom: 0;
+    /* align-items: center; */
+    color: whitesmoke;
+    /* gap: 50px; */
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      28deg,
+      rgba(0, 0, 0, 1) 37%,
+      rgba(18, 52, 65, 1) 70%
+    );
+    h1{
+      text-wrap: nowrap;
+    }
+
+    background-color: red;
+    div {
+      img {
+        transform: translateX(180px);
+        width: 10%;
+        /* height: 60%; */
+        object-fit: cover;
+        display: none;
+      }
+    }
+
+    .kid-movie {
+      /* transform: translateX(50px); */
+      /* margin-right: 20px; */
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 15px;
+      }
+      p {
+        width: 100%;
+        height: 40%;
+        overflow: hidden;
+        /* text-wrap: nowrap; */
+        direction: rtl;
+        /* margin-left: auto; */
+        text-align: right;
+        margin-bottom: 15px;
+      }
+      button {
+        background-color: #1cb961;
+        width: max-content;
+        padding: 5px;
+        border-radius: 5px;
+        /* margin-right: 5%; */
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .animation {
+    width: 100%;
+    /* height: 55vh; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 0;
+    /* align-items: center; */
+    color: whitesmoke;
+    /* gap: 50px; */
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      28deg,
+      rgba(0, 0, 0, 1) 37%,
+      rgba(18, 52, 65, 1) 70%
+    );
+
+    div {
+      img {
+        transform: translateX(180px);
+        width: 50%;
+        /* height: 60%; */
+        object-fit: cover;
+      }
+    }
+
+    .kid-movie {
+      transform: translateX(50px);
+
+      width: 37%;
+      text-align: right;
+      h1 {
+        margin-bottom: 15px;
+      }
+      p {
+        width: 60%;
+        direction: rtl;
+        margin-left: auto;
+        margin-bottom: 15px;
+      }
+      button {
+        background-color: #1cb961;
+        width: max-content;
+        padding: 5px;
+        border-radius: 5px;
+        /* margin-right: 5%; */
+      }
+    }
+  }
+}

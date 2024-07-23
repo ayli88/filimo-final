@@ -1,0 +1,205 @@
+@media only screen and (max-width:600px){
+  header {
+    width: 100%;
+    height: 90vh;
+    /* background-color: black; */
+    background-image:  radial-gradient(circle, rgba(0, 0, 0, 0.614) 70%, rgb(42, 39, 39) 93%) , url(https://www.filimo.com/assets/web/ui/img-7l42PCVsNy5JS5tGJ1DtQ/campaigns/nosub-v_new/payment_landing.png);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-blend-mode: overlay; */
+    background-size: cover;
+    /* background-position-y: -700%; */
+  
+  
+  
+    nav {
+  
+      width: 100%;
+  
+      height: 9vh;
+      padding: 25px 25px;
+      box-sizing: border-box;
+      /* background-color: black; */
+      font-size: 13px;
+      gap: 25px;
+      display: flex;
+      flex-direction: row-reverse;
+      svg {
+        width: 80%;
+        height: 35px;
+        margin-left: auto;
+        transform: translateY(-9.5px);
+      }
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+  
+      .filimo-tour {
+        display: flex;
+        gap: 10px;
+        vertical-align: middle;
+        direction: rtl;
+      }
+
+      .search{
+       
+        svg {
+          width: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-2px);
+          height: 20px;
+          fill: white;
+          font-weight: bold;
+
+        
+        }
+      
+      
+  
+      }
+      button{
+        background-color: #1cb961;
+        padding: 5px;
+        box-sizing: border-box;
+        color: white;
+        height: 40px;
+        margin-right: auto;
+        vertical-align: bottom;
+        border-radius: 5px;
+        transform: translateY(-10px);
+      }
+  
+      .film,
+      .serial,
+      .collection,.filimo-tour,.filimo-school, .foreign, .irani, .kids {
+        display: none;
+        /* svg {
+          width: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-2px);
+          height: 20px;
+          fill: white;
+          font-weight: bold;
+        } */
+      }
+  
+      /* .kids {
+        display: flex;
+        flex-direction: row-reverse;
+        svg {
+          width: 20px;
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-2px);
+          height: 20px;
+          fill: white;
+          font-weight: bold;
+        }
+        &:first-child {
+          width: 10px;
+        }
+      } */
+    }
+  }
+}
+
+@media only screen and (min-width:768px) {
+  header {
+    width: 100%;
+    height: 90vh;
+    /* background-color: black; */
+    background-image:  radial-gradient(circle, rgba(0, 0, 0, 0.614) 70%, rgb(42, 39, 39) 93%) , url(https://www.filimo.com/assets/web/ui/img-7l42PCVsNy5JS5tGJ1DtQ/campaigns/nosub-v_new/payment_landing.png);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-blend-mode: overlay; */
+    background-size: cover;
+    /* background-position-y: -700%; */
+  
+  
+  
+    nav {
+  
+      width: 100%;
+  
+      height: 9vh;
+      padding: 25px 25px;
+      box-sizing: border-box;
+      /* background-color: black; */
+      font-size: 13px;
+      gap: 25px;
+      display: flex;
+      flex-direction: row-reverse;
+      svg {
+        width: 80%;
+        height: 35px;
+        margin-left: auto;
+        transform: translateY(-9.5px);
+      }
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+
+        &:hover{
+          color: rgb(232, 139, 10);
+          fill: rgb(232, 139, 10);
+        }
+      }
+  
+      .filimo-tour {
+        display: flex;
+        gap: 10px;
+        vertical-align: middle;
+        direction: rtl;
+      }
+  
+      .film,
+      .serial,
+      .collection, .search, .kids {
+        svg {
+          width: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-2px);
+          height: 20px;
+          fill: white;
+          font-weight: bold;
+
+        
+        }
+      }
+  
+      .kids {
+        display: flex;
+        flex-direction: row-reverse;
+        svg {
+          width: 20px;
+          display: inline-block;
+          vertical-align: middle;
+          transform: translateY(-2px);
+          height: 20px;
+          fill: white;
+          font-weight: bold;
+        }
+       
+      }
+
+      button{
+        background-color: #1cb961;
+        padding: 5px;
+        box-sizing: border-box;
+        color: white;
+        height: 40px;
+        margin-right: auto;
+        vertical-align: bottom;
+        border-radius: 5px;
+        transform: translateY(-10px);
+
+      }
+    }
+  }
+}
